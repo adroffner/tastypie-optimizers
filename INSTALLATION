@@ -1,0 +1,22 @@
+INSTALLATION
+============
+
+1. Install django-tastypie as directed
+
+https://django-tastypie.readthedocs.org/en/latest/tutorial.html#installation
+
+2. Install tastypie-optimizers using pip or easy_install.
+
+$ pip install tastypie-optimizers
+
+3. Temporarily, add "tastypie_optimizers" to INSTALLED_APPS.
+
+This lets you try the sample application & run the unittest suite.
+
+Run Unit Tests
+==============
+
+Run the unittest suite to prove this works with your version of tastypie.
+
+$ python manage.py test tastypie_optimizers.tests
+
