@@ -3,7 +3,7 @@ from tastypie.bundle import Bundle
 
 import logging
 
-class GhostModel(object):
+class _GhostModel(object):
     def __init__(self, pk):
         self.pk = pk
 
@@ -45,20 +45,23 @@ class ToOneFieldNoQuery(ToOneField):
             if self.raw_key:
                 return pk
             else:
-                b = Bundle(obj=GhostModel(pk))
+                b = Bundle(obj=_GhostModel(pk))
                 return self.to().get_resource_uri(b)
 
         return super(ToOneFieldNoQuery, self).dehydrate(bundle, for_list=for_list)
 
 
 class ToOneField(ToOneFieldNoQuery):
+    """ Same-name replacement to tastypie.fields.* """
     pass
 
 
 class ForeignKey(ToOneFieldNoQuery):
+    """ Same-name replacement to tastypie.fields.* """
     pass
 
 
 class OneToOneField(ToOneFieldNoQuery):
+    """ Same-name replacement to tastypie.fields.* """
     pass
 
