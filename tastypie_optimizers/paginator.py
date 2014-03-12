@@ -9,9 +9,9 @@ class RunningCountPaginator(Paginator):
 
     def page(self):
         """ Count all the objects on the pages before current one,
-        and add the remaining objects to make running count.
+        and add the remaining objects to make a running count.
 
-        When pages fall ove the end, running_count = -1
+        When pages fall over the end, running_count = -1
         """
         data = super(RunningCountPaginator, self).page()
         try:
