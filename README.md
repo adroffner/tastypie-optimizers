@@ -6,7 +6,7 @@ Optimize Tastypie ModelResource requests. Limit unnecessary SQL queries on relat
 Unit Tests
 ==========
 
-Run **unit tests* with your **tastypie** version to make sure this is compatible. Simply, add both to a Django project's **INSTALLED_APPS** and hook the **API URLs** into the project's urls.py.
+Run **unit tests** with your **tastypie** version to make sure this is compatible. Simply, add both to a Django project's **INSTALLED_APPS** and hook the **API URLs** into the project's urls.py.
 
 * project/urls.py
 
